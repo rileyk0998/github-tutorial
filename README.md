@@ -18,7 +18,7 @@ Git is the tool that you use inorder to in  Github, which is the platform where 
 ---
 ## Initial Setup
 **Githud & Cloud 9**
-1. Start off by creating a Github account with your email (username: `<your name>`, if you are a HSTAT student use your HSTAT email but without the `@hstat.org`)
+1. Start off by creating a Github account with your email (username: _`<your name>`_, if you are a HSTAT student use your HSTAT email but without the `@hstat.org`)
 2. Go to [Cloud9 login](https://c9.io/login)
 3. Go to the top right corner and click on the image of the cat
 4. Log in and click the settings icon 
@@ -46,8 +46,6 @@ Git is the tool that you use inorder to in  Github, which is the platform where 
 7. Go back to your workspace and open the workspace you plan to work in 
 8. Type in `ssh -T git@github.com` 
 9. It should say: `Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._` 
-10. Go to Github, at top-right click the `+`, create a new repository, name it and then click `create repository` 
-11. Once created, make sure the url is under SSH, then go to the second section to copy and paste the following lines on to your Cloud 9(one at a time)  
 
 **Congrates! You're finally done setting up your Github and Cloud 9 account!**
 
@@ -55,12 +53,31 @@ Git is the tool that you use inorder to in  Github, which is the platform where 
 ---
 ## Repository Setup
 
+1. Create a directory and then `cd` into it (Type `mkdir <name>` and then `cd <name of directory>`)
+2. Type in `git init` in order to initialize the directory (only do this once in the beginning of a new directory)
+3. Go to Github, at top-right click the `+`, create a new repository, name it and then click `create repository` 
+4. Once created, make sure the url is under SSH, then go to the second section to copy and paste the following lines on to your Cloud 9(one at a time)  
+5. Now you can create a README.md file (`touch <filename>.md`) 
+6. You can now type whatever you want into it. 
+7. Once you're done typing save and add (`git add .`) it (file should have auto saved, if not click `CTRL S` and make sure there is a `x` and not a gray circle by the title)
+8. Once it is added, type `git commit -m "<breif message of what you did>"`  
 
 
 ---
 ## Workflow & Commands
-
+`Git status` - used to check where you are, if you have saved anything  
+`git add --all` - add all changes and any deleted/renamed files  
+`git push -u origin master` - Only done once in the beginning when making the repository  
+`git diff` - To see changes made in file  
+`git log` - List past commits that you have recently done  
 
 
 ---
 ## Rolling Back Changes
+`rm -rf .git` - remove `git init`  
+`git checkout -- file` - Undo edits in file before add  
+`git reset HEAD file` - Undo added file  
+`git remote -v` - Where git push will send commits to. V = “verbose”  
+`git reset --hard HEAD~1` - Undos push, commit, and add. Delete code/anything that was typed into the file last. 
+`git reset --soft HEAD~1` - Undos push, commit, and add. Does not delete code/anything that was typed into the file last.  
+
