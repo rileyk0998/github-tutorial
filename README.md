@@ -74,7 +74,7 @@ Git is the tool that you use inorder to in  Github, which is the platform where 
 
 ---
 ## Rolling Back Changes
-`rm -rf .git` - remove `git init`  
+`rm -rf .git` - remove `git init`, this can be done if you accidentally initialized the wrong directory  
 `git checkout -- file` - Undo edits in file before add  
 `git reset HEAD file` - Undo added file  
 `git remote -v` - Where git push will send commits to. V = “verbose”  
