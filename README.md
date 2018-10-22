@@ -81,3 +81,24 @@ Git is the tool that you use inorder to in  Github, which is the platform where 
 `git reset --hard HEAD~1` - Undos push, commit, and add. Delete code/anything that was typed into the file last. 
 `git reset --soft HEAD~1` - Undos push, commit, and add. Does not delete code/anything that was typed into the file last.  
 
+
+---
+## Collaberation
+**Clone**  
+Cloning allows you to make multiple copies of one repository.
+1. Go into Github and go to the repository you want to clone
+2. Click the green `clone or download` button and make sure befor copying the link it says: Clone with **SSH**
+3. Go to Cloud 9 and into the directory you want the repo to go in
+4. Type `git clone url` (`url` = ssh)
+5. Once done `cd` into it
+
+**Fork**  
+Forking is to make a remote of someone elses repo and then clone it onto your local.  
+You can't clone someone elses repo and push it without their permission. 
+1. Go into Github and go to the repository you want to clone
+2. At the top right corner there should be a button that says: `Fork` , click it
+3. Once forked, next to the repo name it should say your username
+4. Yor can now clone it into your directory
+
+**Pull Request**
+Pull requests are when you clone someone elses repo and make changes to it then you add and commit, then in Github you summit the request.
