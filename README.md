@@ -4,7 +4,7 @@ _by Riley K_
 
 ---
 ## Git vs. GitHub
-Git is the tool that you use inorder to in  Github, which is the platform where you do can store your projectsyou make. 
+Git is the tool that you use inorder to in  Github, which is the platform where you do can store your projects you make. 
 #### Git
 -Git keeps snapshots of the code in local repository  
 -Doesn't require Github
@@ -65,21 +65,22 @@ Git is the tool that you use inorder to in  Github, which is the platform where 
 
 ---
 ## Workflow & Commands
-`Git status` - used to check where you are, if you have saved anything  
-`git add --all` - add all changes and any deleted/renamed files  
-`git push -u origin master` - Only done once in the beginning when making the repository  
-`git diff` - To see changes made in file  
-`git log` - List past commits that you have recently done  
+* `Git status` - used to check where you are, if you have saved anything  
+* `git add --all` - add all changes and any deleted/renamed files  
+* `git push -u origin master` - Only done once in the beginning when making the repository  
+* `git diff` - To see changes made in file  
+* `git log` - List past commits that you have recently done  
 
 
 ---
 ## Rolling Back Changes
-`rm -rf .git` - remove `git init`, this can be done if you accidentally initialized the wrong directory  
-`git checkout -- file` - Undo edits in file before add  
-`git reset HEAD file` - Undo added file  
-`git remote -v` - Where git push will send commits to. V = “verbose”  
-`git reset --hard HEAD~1` - Undos push, commit, and add. Delete code/anything that was typed into the file last. 
-`git reset --soft HEAD~1` - Undos push, commit, and add. Does not delete code/anything that was typed into the file last.  
+* `rm -rf .git` - remove `git init`, this can be done if you accidentally initialized the wrong directory  
+* `git checkout -- file` - Undo edits in file before add  
+* `git reset HEAD file` - Undo added file  
+* `git remote -v` - Where git push will send commits to. V = “verbose”  
+* `git reset --hard HEAD~1` - Undos push, commit, and add. Delete code/anything that was typed into the file last.
+
+* `git reset --soft HEAD~1` - Undos push, commit, and add. Does not delete code/anything that was typed into the file last.  
 
 
 ---
