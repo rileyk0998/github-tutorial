@@ -4,7 +4,7 @@ _by Riley K_
 
 ---
 ## Git vs. GitHub
-Git is the tool that you use inorder to in  Github, which is the platform where you do can store your projectsyou make. 
+Git is the tool that you use inorder to in  Github, which is the platform where you can store your projectsyou make. 
 #### Git
 -Git keeps snapshots of the code in local repository  
 -Doesn't require Github
@@ -100,5 +100,5 @@ You can't clone someone elses repo and push it without their permission.
 3. Once forked, next to the repo name it should say your username
 4. Yor can now clone it into your directory
 
-**Pull Request**
+**Pull Request**  
 Pull requests are when you clone someone elses repo and make changes to it then you add and commit, then in Github you summit the request.
